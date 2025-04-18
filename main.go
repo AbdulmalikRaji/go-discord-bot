@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/abdulmalikraji/go-discord-bot/bot"
+	"github.com/abdulmalikraji/go-discord-bot/config"
+)
 
 func main() {
 	err := config.ReadConfig()
@@ -15,5 +20,5 @@ func main() {
 	<-make(chan struct{})
 	fmt.Println("Bot started successfully. Press Ctrl+C to exit.")
 	return
-	
+
 }
