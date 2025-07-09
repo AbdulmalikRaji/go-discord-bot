@@ -9,7 +9,6 @@ import (
 var (
 	Token     string
 	BotPrefix string
-
 	config *configStruct
 )
 
@@ -38,6 +37,7 @@ func ReadConfig() error {
 	}
 
 	Token = config.Token
+	fmt.Println(Token)
 	BotPrefix = config.BotPrefix
 
 	return nil
